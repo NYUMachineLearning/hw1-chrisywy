@@ -115,6 +115,7 @@ plot(k.values, avg_sil_values,
 set.seed(151)
 iris_kmeans <- kmeans(iris_data, 2, nstart=25)
 iris_kmeans$cluster
+# No. It doesn't cluster by species.
 
 #### Using this clustering, color the PCA plot according to the clusters.
 iris_km <- as.factor(iris_kmeans$cluster)
